@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ConnectSpectrum Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#fcf9f8",
+                    "on-secondary-container": "#715800",
+                    "secondary-container": "#fdcf49",
+                    "surface-variant": "#e4e2e1",
+                    "on-tertiary-fixed": "#271900",
+                    "on-primary-fixed": "#001c37",
+                    "error-container": "#ffdad6",
+                    "primary-fixed-dim": "#a0caff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdeab",
+                    "on-tertiary-container": "#fffbff",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary": "#ffffff",
+                    "inverse-primary": "#a0caff",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#414751",
+                    "on-primary-container": "#fdfcff",
+                    "primary-container": "#2b78bf",
+                    "outline": "#717782",
+                    "inverse-surface": "#303030",
+                    "inverse-on-surface": "#f3f0f0",
+                    "on-primary-fixed-variant": "#00497e",
+                    "tertiary-fixed-dim": "#fbbb45",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#9a6c00",
+                    "primary": "#005ea1",
+                    "on-surface": "#1b1c1c",
+                    "surface-container": "#f0eded",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#5f4100",
+                    "secondary-fixed-dim": "#eec13c",
+                    "primary-fixed": "#d2e4ff",
+                    "secondary-fixed": "#ffe08f",
+                    "on-secondary-fixed-variant": "#584400",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#1b1c1c",
+                    "surface-dim": "#dcd9d9",
+                    "on-secondary-fixed": "#241a00",
+                    "background": "#fcf9f8",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#eae7e7",
+                    "outline-variant": "#c1c7d2",
+                    "surface-container-highest": "#e4e2e1",
+                    "surface-bright": "#fcf9f8",
+                    "tertiary": "#7b5500",
+                    "secondary": "#755b00",
+                    "surface-tint": "#0061a5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-sm": "12px",
+                    "gutter": "16px",
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "stack-md": "24px",
+                    "margin-desktop": "40px",
+                    "stack-lg": "48px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": [
+                            "Bricolage Grotesque"
+                    ],
+                    "headline-md": [
+                            "Bricolage Grotesque"
+                    ],
+                    "label-lg": [
+                            "Bricolage Grotesque"
+                    ],
+                    "body-md": [
+                            "Bricolage Grotesque"
+                    ],
+                    "label-sm": [
+                            "Bricolage Grotesque"
+                    ],
+                    "body-lg": [
+                            "Bricolage Grotesque"
+                    ],
+                    "headline-lg": [
+                            "Bricolage Grotesque"
+                    ]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": [
+                            "26px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-lg": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface h-screen w-full flex justify-center items-center">
+<div class="w-full h-full sm:h-auto sm:min-h-[844px] bg-surface flex flex-col relative overflow-hidden sm:rounded-3xl sm:border sm:border-outline-variant shadow-sm w-[390px]">
+<!-- Header Section -->
+<header class="bg-primary flex flex-col items-center justify-center pt-16 pb-12 px-margin-mobile rounded-b-3xl">
+<span class="material-symbols-outlined text-on-primary text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">stars</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary text-center">ConnectSpectrum</h1>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col px-margin-mobile pt-stack-lg pb-margin-mobile">
+<!-- Role Toggle -->
+<div class="flex gap-4 mb-stack-lg">
+<button class="flex-1 bg-primary text-on-primary font-label-lg text-label-lg py-4 rounded-full flex items-center justify-center" onclick="window.location.href='2_Parent_Login.html'">
+                    Parent
+                </button>
+<button class="flex-1 border border-outline-variant text-on-surface-variant bg-surface font-label-lg text-label-lg py-4 rounded-full flex items-center justify-center" onclick="window.location.href='12_therapist_login.html'">
+                    Therapist
+                </button>
+</div>
+<!-- Login Form -->
+<form class="flex flex-col gap-stack-md flex-grow">
+<!-- Email Field -->
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-4 text-on-surface-variant">mail</span>
+<input class="w-full pl-12 pr-4 py-4 rounded-full border border-outline-variant bg-surface text-on-surface focus:border-primary focus:ring-2 focus:ring-primary-container outline-none font-body-lg text-body-lg transition-all" placeholder="Email" type="email"/>
+</div>
+<!-- Password Field -->
+<div class="relative flex items-center w-full mb-stack-sm">
+<span class="material-symbols-outlined absolute left-4 text-on-surface-variant">lock</span>
+<input class="w-full pl-12 pr-12 py-4 rounded-full border border-outline-variant bg-surface text-on-surface focus:border-primary focus:ring-2 focus:ring-primary-container outline-none font-body-lg text-body-lg transition-all" placeholder="Password" type="password"/>
+<button class="absolute right-4 text-on-surface-variant focus:outline-none flex items-center justify-center" type="button">
+<span class="material-symbols-outlined">visibility</span>
+</button>
+</div>
+<!-- Login Button -->
+<button class="w-full bg-primary text-on-primary font-label-lg text-label-lg py-4 rounded-full flex items-center justify-center mt-stack-md active:scale-95 transition-transform" onclick="window.location.href='2_Parent_Login.html'" type="button">
+                    Login
+                </button>
+<!-- Forgot Password -->
+<a class="text-center font-label-sm text-label-sm text-on-surface-variant mt-stack-sm underline decoration-outline-variant underline-offset-4" href="#">Forgot Password?</a>
+</form>
+<!-- Bottom Support Link -->
+<div class="mt-auto pt-stack-lg pb-stack-sm text-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant" href="#">Having trouble? Contact support</a>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TherapyBuddy - Emotion Matching</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdeab",
+                        "on-primary-fixed": "#001c37",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#00497e",
+                        "on-surface": "#1b1c1c",
+                        "on-error-container": "#93000a",
+                        "secondary": "#755b00",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#a0caff",
+                        "on-background": "#1b1c1c",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-primary": "#a0caff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f3f0f0",
+                        "surface-variant": "#e4e2e1",
+                        "tertiary-fixed-dim": "#fbbb45",
+                        "surface-container-highest": "#e4e2e1",
+                        "on-tertiary-fixed-variant": "#5f4100",
+                        "outline": "#717782",
+                        "on-secondary-container": "#715800",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#9a6c00",
+                        "secondary-fixed-dim": "#eec13c",
+                        "outline-variant": "#c1c7d2",
+                        "surface-container-low": "#f6f3f2",
+                        "on-tertiary-fixed": "#271900",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#584400",
+                        "background": "#fcf9f8",
+                        "tertiary": "#7b5500",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed": "#241a00",
+                        "primary": "#005ea1",
+                        "secondary-fixed": "#ffe08f",
+                        "surface-tint": "#0061a5",
+                        "primary-container": "#2b78bf",
+                        "surface": "#fcf9f8",
+                        "surface-container-high": "#eae7e7",
+                        "on-surface-variant": "#414751",
+                        "on-tertiary-container": "#fffbff",
+                        "surface-container": "#f0eded",
+                        "inverse-surface": "#303030",
+                        "secondary-container": "#fdcf49",
+                        "on-primary-container": "#fdfcff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "12px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "margin-mobile": "20px",
+                        "unit": "8px",
+                        "margin-desktop": "40px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Bricolage Grotesque"],
+                        "label-sm": ["Bricolage Grotesque"],
+                        "label-lg": ["Bricolage Grotesque"],
+                        "headline-lg": ["Bricolage Grotesque"],
+                        "body-md": ["Bricolage Grotesque"],
+                        "headline-md": ["Bricolage Grotesque"],
+                        "body-lg": ["Bricolage Grotesque"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["26px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-sm": ["14px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "label-lg": ["16px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface antialiased h-screen w-full flex justify-center overflow-hidden">
+<div class="w-full max-w-md h-full flex flex-col relative bg-surface-container-lowest">
+<header class="flex items-center justify-between px-margin-mobile h-16 shrink-0 z-10 bg-surface-container-lowest">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-low active:scale-95 transition-transform text-on-surface-variant" onclick="window.location.href='8_child_home.html'">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h1 class="font-label-lg text-label-lg text-on-surface">Emotion Matching</h1>
+<div class="px-3 py-1 rounded-full bg-surface-container border border-outline-variant/30 flex items-center justify-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 1 of 3</span>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto px-margin-mobile pb-stack-md flex flex-col gap-stack-md hide-scrollbar">
+<div class="w-full aspect-square rounded-xl bg-surface-container-lowest border border-outline-variant p-4 flex items-center justify-center shadow-[0_2px_8px_rgba(0,0,0,0.02)] mt-unit">
+<div class="w-full h-full rounded-DEFAULT bg-surface-container-low overflow-hidden relative flex items-center justify-center">
+<img alt="Happy emotion illustration" class="w-full h-full object-cover mix-blend-multiply opacity-90" data-alt="A gentle, friendly illustration of a diverse child's face showing a clear, unambiguous happy emotion with a wide, gentle smile. The style is soft, minimalist vector art specifically designed for cognitive ease in an autism-friendly app. The background is a warm, soft pastel yellow tone that evokes warmth and safety. Lighting is bright, even, and creates a pristine, clean aesthetic without harsh shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3-wa3igQwEggim3MgnYGTNc9u5ZrNZ882OyBdYUEcXl1tjQwRHLq_WCIglUlaWxvue8Ggx3roPo4PfSOiircsjjG3AtVG60mmUoq3k6XbGMUDsLJnWk7xKiXxyDl0o5Fxtd-ymMBzpyjeR8uEathWrgYioG1koBoBnZkwU_enVwG0cktLhWT7TyiLiL0SySvaiL6UhDV9dh2HycTHNealFzSeQRsXWk3vDfz0TgdmCYteJBPJE7O6BqqNRyuwSM-cQ1wLtRQEK3O5"/>
+</div>
+</div>
+<div class="text-center pt-unit">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">How does this person feel?</h2>
+</div>
+<div class="grid grid-cols-2 gap-gutter mt-unit">
+<button class="flex flex-col items-center justify-center gap-3 p-6 rounded-DEFAULT border-2 border-primary bg-primary-fixed text-on-primary-fixed active:scale-[0.98] transition-all shadow-[inset_0_2px_4px_rgba(255,255,255,0.5)]" onclick="window.location.href='10_child_reward_screen.html'">
+<span class="text-[48px] leading-none block">😄</span>
+<span class="font-label-lg text-label-lg">Happy</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-3 p-6 rounded-DEFAULT border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-container-low active:scale-[0.98] transition-all shadow-[0_2px_4px_rgba(0,0,0,0.02)]" onclick="window.location.href='10_child_reward_screen.html'">
+<span class="text-[48px] leading-none block">😢</span>
+<span class="font-label-lg text-label-lg">Sad</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-3 p-6 rounded-DEFAULT border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-container-low active:scale-[0.98] transition-all shadow-[0_2px_4px_rgba(0,0,0,0.02)]" onclick="window.location.href='10_child_reward_screen.html'">
+<span class="text-[48px] leading-none block">😠</span>
+<span class="font-label-lg text-label-lg">Angry</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-3 p-6 rounded-DEFAULT border border-outline-variant bg-surface-container-lowest text-on-surface hover:bg-surface-container-low active:scale-[0.98] transition-all shadow-[0_2px_4px_rgba(0,0,0,0.02)]" onclick="window.location.href='10_child_reward_screen.html'">
+<span class="text-[48px] leading-none block">😲</span>
+<span class="font-label-lg text-label-lg">Surprised</span>
+</button>
+</div>
+<div class="h-stack-md w-full shrink-0"></div>
+</main>
+<footer class="shrink-0 px-margin-mobile py-stack-md bg-surface-container-lowest flex flex-col gap-stack-sm relative z-20">
+<div class="absolute top-0 left-0 w-full h-8 -translate-y-full bg-gradient-to-t from-surface-container-lowest to-transparent pointer-events-none"></div>
+<div class="flex justify-center items-center gap-2 mb-2">
+<div class="w-8 h-2.5 rounded-full bg-primary transition-all"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-surface-variant transition-all"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-surface-variant transition-all"></div>
+</div>
+<button class="w-full h-[56px] bg-primary text-on-primary rounded-full flex items-center justify-center gap-2 active:scale-[0.98] transition-transform shadow-[0_4px_12px_rgba(0,94,161,0.2)]" onclick="window.location.href='10_child_reward_screen.html'">
+<span class="font-label-lg text-label-lg">Next</span>
+</button>
+</footer>
+</div>
+</body></html>
